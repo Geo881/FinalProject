@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textviewg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="28dp"
+        android:text="Goals"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/attendance" />
+
+    <TextView
+        android:id="@+id/goalsHome"
+        android:layout_width="146dp"
+        android:layout_height="252dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="27dp"
+        android:text="goal"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewg1" />
+
+    <TextView
+        android:id="@+id/goalsAway"
+        android:layout_width="146dp"
+        android:layout_height="252dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="36dp"
+        android:text="goal"
+        android:textAlignment="viewEnd"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/goalsHome"
+        app:layout_constraintTop_toBottomOf="@+id/textviewg2" />
+
+    <TextView
+        android:id="@+id/textviewg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="213dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="42dp"
+        android:text="Goals"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textviewg1"
+        app:layout_constraintTop_toBottomOf="@+id/attendance" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/score"
+        app:layout_constraintTop_toBottomOf="@+id/away"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/away"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="207dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="45dp"
+        android:text="Away"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/home"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/headToHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="113dp"
+        android:text="Head-to-Head"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="76dp"
+        android:text="Home"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/homeName"
+        android:layout_width="166dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="homeName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/awayName"
+        android:layout_width="167dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="15dp"
+        android:text="awayName"
+        android:textAlignment="viewEnd"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/homeName"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="91dp"
+        android:text="0 - 0"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/headToHead" />
+
+    <TextView
+        android:id="@+id/venue"
+        android:layout_width="313dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="49dp"
+        android:text="Venue"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/awayName" />
+
+    <TextView
+        android:id="@+id/attendance"
+        android:layout_width="272dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="70dp"
+        android:text="Attendance"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/venue" />
+</androidx.constraintlayout.widget.ConstraintLayout>
