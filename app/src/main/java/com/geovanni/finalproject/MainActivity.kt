@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
+import android.view.View
 import android.view.WindowManager
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
@@ -31,6 +32,11 @@ class MainActivity : AppCompatActivity() {
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
         supportActionBar?.hide()
 
+    }
+
+    fun launchTwitterActivity(view: View){
+        val myIntent = Intent(this, TwitterActivity::class.java)
+        startActivity(myIntent)
     }
 
     fun SignUp(){
