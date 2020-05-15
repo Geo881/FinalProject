@@ -56,12 +56,6 @@ class signup : AppCompatActivity() {
 
     }
 
-    fun launchTwitterActivity(view: View){
-        val myIntent = Intent(this, TwitterActivity::class.java)
-        startActivity(myIntent)
-
-    }
-
     private fun View.hideKeyboard() {
         val inputMethodManager = context.getSystemService(Context.INPUT_METHOD_SERVICE) as
                 InputMethodManager
