@@ -46,4 +46,10 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics:17.2.2'
     implementation 'com.google.firebase:firebase-auth:19.3.1'
 
+    // add extra dependencies
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'oauth.signpost:signpost-core:1.2.1.2'
+    implementation 'se.akerfeldt:okhttp-signpost:1.1.0'
+
+
 }
